@@ -1,0 +1,26 @@
+[build-system]
+requires      = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "triple-quote-clean"
+description     = ''
+readme          = "README.md"
+requires-python = ">=3.7"
+keywords        = []
+authors         = [
+  { name = "Chris", email = "chrisam1993@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "pytest==7.2.1"
+]
+version = "0.1.0"
