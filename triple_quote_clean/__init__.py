@@ -35,8 +35,33 @@ class TripleQuoteCleaner:
         tabs   = 0
         return output
 
+
+    def __rgt__(self, other):
+        return self.__call__(other)
+
+    def __gt__(self, other):
+        return self.__call__(other)
+
     def __rrshift__(self, other):
         return self.__call__(other)
 
     def __rshift__(self, other):
+        return self.__call__(other)
+
+    def __rlshift__(self, other):
+        return self.__call__(other)
+
+    def __rlt__(self, other):
+        return self.__call__(other)
+
+    def __lt__(self, other):
+        return self.__call__(other)
+
+    def __lshift__(self, other):
+        return self.__call__(other)
+
+    def __rpow__(self, other):
+        return self.__call__(other)
+
+    def __pow__(self, other):
         return self.__call__(other)

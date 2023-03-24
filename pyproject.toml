@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name            = "triple-quote-clean"
-description     = ''
+description     = 'clean up triple quotes'
 readme          = "README.md"
 requires-python = ">=3.7"
 keywords        = []
@@ -23,4 +23,4 @@ classifiers = [
 dependencies = [
   "pytest==7.2.1"
 ]
-version = "0.1.0"
+version = "0.2.0"

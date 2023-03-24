@@ -19,7 +19,7 @@ def test_tabs():
     print(output_2)
 
 
-    assert output_1 == "    "+input_string, f"{output} != '    hello world'"
+    assert output_1 == "    "+input_string, f"{output_1} != '    hello world'"
 
 
 if __name__ == "__main__":
