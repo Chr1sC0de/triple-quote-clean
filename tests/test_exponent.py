@@ -10,9 +10,9 @@ def test_exponent():
 
     target = """select *\nfrom some_database\nwhere  some_value = 3"""
 
-    tqc                = TripleQuoteCleaner()
+    tqc = TripleQuoteCleaner()
     tqc.skip_top_lines = 1
-    output             = tqc ** query + "\nwhere  some_value = 3"
+    output = tqc ** query + "\nwhere  some_value = 3"
 
     assert output == target, f"{output} != {target}"
 

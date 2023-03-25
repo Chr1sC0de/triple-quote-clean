@@ -9,7 +9,7 @@ readme          = "README.md"
 requires-python = ">=3.7"
 keywords        = []
 authors         = [
-  { name = "Chris", email = "chrisam1993@gmail.com" },
+  { name = "Chris", email = "chrisam1993@live.com" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -20,7 +20,5 @@ classifiers = [
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
 ]
-dependencies = [
-  "pytest==7.2.1"
-]
-version = "0.2.0"
+dependencies = []
+version = "1.0.0"

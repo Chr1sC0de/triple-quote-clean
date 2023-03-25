@@ -11,9 +11,9 @@ def test_guide_character():
 
     target = """    select *\n    from some_database"""
 
-    tqc                = TripleQuoteCleaner()
+    tqc = TripleQuoteCleaner()
     tqc.skip_top_lines = 1
-    output             = query >> tqc
+    output = query >> tqc
 
     print("Input")
     print(query)

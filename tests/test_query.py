@@ -10,9 +10,9 @@ def test_query():
 
     target = """select *\nfrom some_database"""
 
-    tqc                = TripleQuoteCleaner()
+    tqc = TripleQuoteCleaner()
     tqc.skip_top_lines = 1
-    output             = query >> tqc
+    output = query >> tqc
 
     assert output == target, f"{output} != {target}"
 

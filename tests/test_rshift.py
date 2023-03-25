@@ -4,8 +4,8 @@ from triple_quote_clean import TripleQuoteCleaner
 def test_rshift():
 
     input_string = """hello world"""
-    tqc          = TripleQuoteCleaner()
-    output       = '\n' + input_string >> tqc
+    tqc = TripleQuoteCleaner()
+    output = '\n' + input_string >> tqc
 
     print(output)
 
