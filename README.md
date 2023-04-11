@@ -3,7 +3,8 @@
 TripleQuoteCleaner is a Python class that can be used to clean triple-quoted
 strings in a variety of ways. It's designed to be used in cases where you want
 to remove extraneous whitespace and/or add indentation to a triple-quoted
-string.
+string. This is useful when dealing with extensions/code that require some
+extraneous metadata in the string.
 
 To use TripleQuoteCleaner, simply import it into your Python script:
 
