@@ -1,5 +1,12 @@
 # triple-quote-clean
 
+- [triple-quote-clean](#triple-quote-clean)
+  - [Usage](#usage)
+    - [Basic Usage](#basic-usage)
+    - [Indentation](#indentation)
+    - [Guide Characters](#guide-characters)
+    - [Jinja Pipe](#jinja-pipe)
+
 TripleQuoteCleaner is a Python class that can be used to clean triple-quoted
 strings in a variety of ways. It's designed to be used in cases where you want
 to remove extraneous whitespace and/or add indentation to a triple-quoted
@@ -85,4 +92,42 @@ spaces will be maintained . The output of this code will be:
 ```sql
     select *
     from some_database
+```
+
+### Jinja Pipe
+
+A jinja pipe is a simple wrapper over a jinja string render. For example
+
+```python
+tqc = TripleQuoteCleaner(skip_top_lines=1)
+ (
+    JinjaPipe(columns=["hello", "these", "are", "some", "columns"])
+    << tqc
+    ** """--sql
+    select
+    {% for item in columns %}
+        {% if loop.last%}
+            nvl({{item}}, -1)
+        {% else %}
+            nvl({{item}}, -1),
+        {% endif %}
+    {% endfor %}
+    from
+        some.table
+    """
+)
+```
+
+will produce
+
+```sql
+select
+    hello,
+    these,
+    are,
+    some,
+    columns,
+    world
+from
+    some.table
 ```

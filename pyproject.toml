@@ -12,7 +12,6 @@ authors         = [
   { name = "Chris", email = "chrisam1993@live.com" },
 ]
 classifiers = [
-  "Development Status :: 4 - Beta",
   "License :: OSI Approved :: MIT License",
   "Programming Language :: Python",
   "Programming Language :: Python :: 3.7",
@@ -21,8 +20,10 @@ classifiers = [
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
 ]
-dependencies = []
-version = "1.0.0"
+dependencies = [
+  "jinja2"
+]
+version = "1.1.0"
 
 [project.urls]
 "Homepage" = "https://github.com/Chr1sC0de/triple-quote-clean"
